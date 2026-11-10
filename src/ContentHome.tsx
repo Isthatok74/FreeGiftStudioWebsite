@@ -10,6 +10,7 @@ interface ProjectData {
   link: string;
   icon: string;
   linkText: string;
+  hidden?: boolean;
 }
 
 const projects: ProjectData[] = [
@@ -28,6 +29,7 @@ const projects: ProjectData[] = [
     link: 'https://play.google.com/store/apps/details?id=com.myproj.chordchartgenerator',
     icon: '/chordlibrary-icon.png',
     linkText: 'Get it on Google Play',
+    hidden: true, // TODO: unhide once Chord Library is transferred to Free Gift Studio
   },
   {
     name: 'leagueportal.gg',
@@ -47,7 +49,7 @@ function ContentHome(): JSX.Element {
   return (
     <HomeContentContainer>
       <ProjectsGrid>
-        {projects.map((project) => (
+        {projects.filter(p => !p.hidden).map((project) => (
           <ProjectPanel key={project.name}>
             <ProjectIcon
               src={project.icon}
