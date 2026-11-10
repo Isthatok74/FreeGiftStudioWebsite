@@ -17,7 +17,7 @@ const projects: ProjectData[] = [
     name: 'Paper Volleyball',
     description:
       'A stick-figure volleyball simulator and roguelite. Available on Steam, Google Play and Apple Store. Coming soon.',
-    link: 'https://freegiftstudio.ca/PaperVolleyballWebsite/',
+    link: 'https://freegiftstudio.ca/papervolleyball/',
     icon: '/papervolleyball-icon.png',
     linkText: 'Visit the project page',
   },
