@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <style>
+    .ball { fill: #102d3d; }
+    @media (prefers-color-scheme: dark) {
+      .ball { fill: #ffffff; }
+    }
+  </style>
+  <path
+    fill="#ef755f"
+    fill-rule="evenodd"
+    d="M6 43V22C6 10.7 13.7 3 24 3s18 7.7 18 19v21H6Zm8 0h20V22.5C34 15.9 29.8 11 24 11s-10 4.9-10 11.5V43Z"
+  />
+  <circle class="ball" cx="24" cy="25.5" r="4.3" />
+</svg>
